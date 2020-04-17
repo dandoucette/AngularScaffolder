@@ -175,7 +175,7 @@ namespace AngularScaffolder
 
                 sbTable.AppendLine($"\t\t<ng-container [matColumnDef]=\"columnNames.{property.Name}\">");
                 sbTable.AppendLine($"\t\t\t<th mat-header-cell *matHeaderCellDef>{property.NameWithSpaces}</th>");
-                sbTable.AppendLine($"\t\t\t<td mat-cell *matCellDef=\"let row\"> {{ row[columnNames.{property.Name}] }} </td>");
+                sbTable.AppendLine($"\t\t\t<td mat-cell *matCellDef=\"let row\"> {{{{ row[columnNames.{property.Name}] }}}} </td>");
                 sbTable.AppendLine("\t\t</ng-container>");
             }
 
